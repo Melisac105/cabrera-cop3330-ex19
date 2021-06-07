@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class UsrInput  {
     static Scanner input = new Scanner(System.in);
 
-    static public double getWeight(String type) {
-        System.out.printf("Enter your %s: ", type);
+    static public double getWeight(String type, String type1) {
+        System.out.printf("Enter your %s (in %s): ", type, type1);
         try {
             return input.nextDouble();
         }

@@ -30,8 +30,8 @@ import util.UsrInput;
 public class BmiApp {
 
     public static void main(String[] args) {
-        double weight = UsrInput.getWeight("weight");
-        double height = UsrInput.getWeight("height");
+        double weight = UsrInput.getWeight("weight", "pounds");
+        double height = UsrInput.getWeight("height", "inches");
         double bmi = Calculations.calcBMI(weight, height);
         Output.printOutput(bmi);
     }
